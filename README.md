@@ -3,7 +3,6 @@
 # CarnaCode 2024 - Desafio 1
 O CarnaCode é um evento online e gratuito que acontece nos dias 10, 11, 12 e 13 de Fevereiro, onde você terá a oportunidade de codificar uma aplicação Web (Blazor + PWA) completa, do começo ao fim.
 
-Participe pelo link:
 
 👉 https://go.balta.io/carnacode-2024
 
