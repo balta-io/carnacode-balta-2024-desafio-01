@@ -1,0 +1,9 @@
+Estou participando do CarnaCode 2024 do **(Mencionar perfil do balta.io)**, um evento online e gratuito onde estou desenvolvendo minhas habilidades com HTML, CSS, Blazor, WebAssembly, PWA, GitHub, GitHub Actions e Github Pages.
+
+Você também pode participar se inscrevendo neste link:
+👉 https://go.balta.io/carnacode-2024
+
+Este é o resultado do primeiro desafio, onde pude desenvolver minhas habilidades com HTML e CSS, criando o protótipo do App que estamos desenvolvendo.
+👉 LINK PARA SEU PROJETO NO GITHUB
+
+#dev #developer #desenvolvedor #programming #programação #programador #web #webcomponents #webdev #frontend #html #css #microsoft #csharp #dotnet #aspnet #razor #razorpages #blazor #blazorwasm #wasm #webassembly #pwa
