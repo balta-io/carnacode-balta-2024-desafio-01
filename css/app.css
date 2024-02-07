@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.input-text {
+    background-color: #F6F6F6;
+    border: 2px solid #BDBDBD;
+}
