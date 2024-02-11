@@ -10,7 +10,7 @@
   </head>
 
   <body class="bg-primary flex flex-col items-center justify-center min-h-screen">
-		<section class="container">
+		<section class="container mt-20">
 			<form class="gap-1 rounded px-5 pt-5 pb-10 flex flex-col items-center justify-center bg-white" method="POST" action="">
 				<div class="-mt-20">
 					<img class="logo" src="assets/icon-no-bg.png" />
@@ -29,6 +29,12 @@
 				</div>
 				<div class="w-full flex">
 					<input class="w-full" placeholder="Seu senha" type="text" />
+				</div>
+				<div class="w-full flex">
+					<label class="flex justify-center">
+						<input class="transition-all duration-300" type="checkbox" checked />
+						<span class="ml-2 text-gray">Não sou um robô</span>
+					</label>
 				</div>
 				<div class="w-full flex">
 					<button type="submit" class="w-full btn btn-primary transition-all duration-500">
