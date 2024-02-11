@@ -86,10 +86,18 @@
 
 /* Historico */
 
-.History{
-    width: 375px;
-    height: 812px;
+body > main .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > main .content .section-history{
+    flex: 1;
+    padding: 1em;
 }
 
 /* Titulos */
@@ -129,7 +137,6 @@
     height: 50px;
     left: 0px;
     top: 0px;
-    position: absolute;
     background: #F6F6F6;
     border-radius: 100px;
     border: 1px #E8E8E8 solid;
@@ -138,7 +145,6 @@
 .search::placeholder {
     left: 16px;
     top: 16px;
-    position: absolute;
     color: #BDBDBD;
     font-size: 16px;
     font-family: Inter;
@@ -149,128 +155,53 @@
 /* Lista de historico */
 
 .tableHistory {
-    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  }
+}
   
-  .rowHistory {
+.rowHistory {
     border-bottom: 1px solid #E8E8E8;
-  }
+}
   
-  .iconCell {
+.icon-cell {
     width: 50px;
     height: 50px;
     background: #F6F6F6;
     border-radius: 8px;
-  }
+}
   
-  .textTitleCell {
-    padding-left: 16px;
+
+.textTitle {
+    left: 66px;
+    top: 0px;
     color: black;
     font-size: 16px;
     font-family: Inter;
     font-weight: 600;
     word-wrap: break-word;
-  }
-  
-  .textDateCell {
-    padding-right: 16px;
+}
+
+.textDate {
+    left: 284px;
+    top: 2px;
     text-align: right;
     color: #522020;
     font-size: 14px;
     font-family: Inter;
     font-weight: 400;
     word-wrap: break-word;
-  }
+}
   
-  .textDescriptionCell {
-    padding-left: 16px;
-    padding-right: 16px;
+.textDescription {
+    width: 269px;
+    left: 66px;
+    top: 27px;
     color: black;
     font-size: 14px;
     font-family: Inter;
     font-weight: 400;
     word-wrap: break-word;
-  }
-  
-  .iconCell,
-  .textTitleCell,
-  .textDateCell,
-  .textDescriptionCell {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
-/* .divHistory {
-  width: 343px;
-  height: 170px;
-  left: 16px;
-  top: 304px;
-  position: absolute;
 }
-
-.gridHistory {
-  width: 343px;
-  height: 77px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  background: #F6F6F6;
-  border-radius: 8px;
-}
-
-.textTitle {
-  left: 66px;
-  top: 0px;
-  position: absolute;
-  color: black;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 600;
-  word-wrap: break-word;
-}
-
-.textDate {
-  left: 284px;
-  top: 2px;
-  position: absolute;
-  text-align: right;
-  color: #522020;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.textDescription {
-  width: 269px;
-  left: 66px;
-  top: 27px;
-  position: absolute;
-  color: black;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dividerLine {
-  width: 277px;
-  height: 0px;
-  left: 66px;
-  top: 77px;
-  position: absolute;
-  border: 1px #E8E8E8 solid;
-} */
 
 /* Icone */
 
