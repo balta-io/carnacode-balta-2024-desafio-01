@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,18 @@
     <title>IMC</title>
 </head>
 
-<body>
+<body style="background-color: #2E1462;">
     <div class="principalContainer">
         <h1 class="h1">Cálculo de IMC</h1>
         <br>
-        <input required class="input" type="text" placeholder="Altura" />
-        <input required class="input" type="text" placeholder="Peso" />
+        <div>
+            <input required class="input" type="number" placeholder="Altura" />
+            <span>/m</span>
+        </div>
+        <div>
+            <input required class="input" type="number" placeholder="Peso" />
+            <span>/Kg</span>
+        </div>
         <select required class="input">
             <option desable selected>Selecione seu sexo.</option>
             <option>Masculino</option>
@@ -23,6 +29,9 @@
             <input class="input" type="checkbox"/>
             <span>Eu tenho 65 anos ou mais</span>
         </div>
+        <div class="horizontalDivisor"></div>
+        <button>Calcular meu IMC</button>
+        <button>Entenda o cálculo</button>
     </div>
 </body>
 
