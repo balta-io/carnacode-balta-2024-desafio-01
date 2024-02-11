@@ -67,6 +67,12 @@ input::placeholder {
 
 .checkbox{
     margin: 11px 0 27px 0; /* Equivalente a margin-top: 10px; margin-bottom: 20px; */
+    align-items: center;
+}
+
+.input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
 }
 
 .input[type="checkbox"] + label {
