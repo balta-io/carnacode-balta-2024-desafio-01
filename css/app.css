@@ -1,12 +1,124 @@
-.flex {
+body {
+    background-color: #2E1462;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h1{
+    margin-block-start: 0.57em;
+    margin-block-end: 0;
+    text-align: center;
+}
+
+.principalContainer{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 9px;
+
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 10px 10px 15px #8A2BE2C9;
 }
 
-.flex-row {
-    flex-direction: row;
+.horizontalDivisor{
+    width: 100%;
+    height: 1px;
+    align-self: center;
+    background-color: #2E1462;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+.input{
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    border-width: 0.5px;
+    padding: 7px;
+}
+
+.btn{
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.btnPrimary{
+    border-color: #45FEFE;
+    background-color: #45FEFE;
+}
+
+.btnSecondary{
+    border-color: #45FEFE;
+    background-color: white;
+}
+
+@media only screen and (min-width: 360px){
+    
+    .principalContainerBigScreen{
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    .h1Small{
+        font-size: 1.85em;
+    }
+    
+    .principalContainerSmallScreen{
+        width: 200px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .h1Small{
+        font-size: 1.65em;
+    }
+
+    .principalContainerSmallScreen{
+        width: 180px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 269px){
+    .h1Small{
+        font-size: 1.45em;
+    }
+    .principalContainerSmallScreen{
+        width: 160px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+        max-width: fit-content;
+    }
+
+    .inputTinyScreen{
+        max-width: 150px;
+        margin-left: 5px;
+    }
 }
