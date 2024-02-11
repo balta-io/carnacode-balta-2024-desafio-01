@@ -83,3 +83,274 @@
 @media screen and (min-width: 901px) {
     /* Seus estilos para telas grandes aqui */
 }
+
+/* Historico */
+
+.History{
+    width: 375px;
+    height: 812px;
+    background: white;
+}
+
+/* Titulos */
+.PageHeader {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 36px;
+    text-align: center; /* Centralize o texto */
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin-top: 20px; /* Adicione margem superior */
+}
+
+.Feed{
+
+    left: 107px;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Barra de pesquisa */
+.div-search {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    margin-top: 20px; /* Adicione margem superior */
+}
+
+.search {
+    width: 343px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #F6F6F6;
+    border-radius: 100px;
+    border: 1px #E8E8E8 solid;
+}
+    
+.search::placeholder {
+    left: 16px;
+    top: 16px;
+    position: absolute;
+    color: #BDBDBD;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Lista de historico */
+
+.tableHistory {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .rowHistory {
+    border-bottom: 1px solid #E8E8E8;
+  }
+  
+  .iconCell {
+    width: 50px;
+    height: 50px;
+    background: #F6F6F6;
+    border-radius: 8px;
+  }
+  
+  .textTitleCell {
+    padding-left: 16px;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  .textDateCell {
+    padding-right: 16px;
+    text-align: right;
+    color: #522020;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .textDescriptionCell {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: black;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .iconCell,
+  .textTitleCell,
+  .textDateCell,
+  .textDescriptionCell {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+/* .divHistory {
+  width: 343px;
+  height: 170px;
+  left: 16px;
+  top: 304px;
+  position: absolute;
+}
+
+.gridHistory {
+  width: 343px;
+  height: 77px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #F6F6F6;
+  border-radius: 8px;
+}
+
+.textTitle {
+  left: 66px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.textDate {
+  left: 284px;
+  top: 2px;
+  position: absolute;
+  text-align: right;
+  color: #522020;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.textDescription {
+  width: 269px;
+  left: 66px;
+  top: 27px;
+  position: absolute;
+  color: black;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.dividerLine {
+  width: 277px;
+  height: 0px;
+  left: 66px;
+  top: 77px;
+  position: absolute;
+  border: 1px #E8E8E8 solid;
+} */
+
+/* Icone */
+
+.group-container {
+    width: 95px;
+    height: 95px;
+    left: 141px;
+    top: 62px;
+    position: absolute;
+  }
+  
+  .rectangle-1,
+  .rectangle-2,
+  .rectangle-2-stroke,
+  .vector,
+  .vector-stroke {
+    position: absolute;
+    background: white;
+  }
+  
+  .rectangle-1,
+  .rectangle-2,
+  .rectangle-2-stroke {
+    width: 95px;
+    height: 95px;
+  }
+  
+  .rectangle-1 {
+    width: 44.93px;
+    height: 44.93px;
+    left: 26.18px;
+    top: 24.27px;
+  }
+  
+  .scale-image {
+    width: 70.82px;
+    height: 70.82px;
+    left: 12.09px;
+    top: 12.09px;
+    position: absolute;
+  }
+  
+  .vector {
+    width: 10.28px;
+    height: 11.42px;
+    left: 53.78px;
+    top: 52.64px;
+  }
+  
+  .vector-stroke {
+    width: 11.34px;
+    height: 12.40px;
+    left: 53.29px;
+    top: 52.15px;
+  }
+  
+  .vector:nth-child(3) {
+    width: 11.99px;
+    height: 10.85px;
+    left: 38.36px;
+    top: 53.21px;
+  }
+  
+  .vector-stroke:nth-child(4) {
+    width: 12.97px;
+    height: 11.83px;
+    left: 37.87px;
+    top: 52.72px;
+  }
+  
+  .vector:nth-child(5) {
+    width: 2.28px;
+    height: 10.85px;
+    left: 32.08px;
+    top: 53.21px;
+  }
+  
+  .vector-stroke:nth-child(6) {
+    width: 3.26px;
+    height: 11.83px;
+    left: 31.59px;
+    top: 52.72px;
+  }
