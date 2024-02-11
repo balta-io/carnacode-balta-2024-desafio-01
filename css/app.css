@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que a altura seja pelo menos 100% da viewport */
+    font-family: 'Inter', sans-serif;
+}
+
 .flex {
     display: flex;
 }
@@ -6,32 +16,85 @@
     flex-direction: row;
 }
 
-div {
-    margin-bottom: 15px;
+.container {
+    padding: 20px;
+    max-width: 343px; /* Define uma largura máxima para a "caixa" */
+    width: 100%; /* Faz com que a "caixa" tenha 100% da largura disponível */
+}
+
+/* Aplica estilos para todos os divs, exceto aqueles que contêm um input do tipo checkbox */
+.container > div:not(:has(input[type="checkbox"])) {
+    display: flex;
+    justify-content: center;
+}
+
+/* Alinha o checkbox à esquerda nos divs que contêm o input do tipo checkbox */
+.container > div:has(input[type="checkbox"]) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title {
+    width: 343px;
+    height: 36px;
+    font-size: 30px; /* Tamanho da fonte será o mínimo entre 5% da largura da viewport e 36px */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 24px;
+    font-weight: 600; /* Adiciona semi-bold */
 }
 
 .input[type="text"]  {
     width: 343px;
     height: 50px;
     background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+    border: 1px solid #E8E8E8;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px #aaa;
+    margin-bottom: 16px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Garante que a altura seja pelo menos 100% da viewport */
+input::placeholder {
+    color: #BDBDBD; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding-left: 10px; /* Adiciona um espaço de 10 pixels à esquerda do campo */
 }
 
-.container {
-    padding: 20px;
-    text-align: center;
-    max-width: 400px; /* Define uma largura máxima para a "caixa" */
-    width: 100%; /* Faz com que a "caixa" tenha 100% da largura disponível */
+.input[type="text"] + label {
+    color: #BDBDBD;
+}
+
+.checkbox{
+    margin: 11px 0 27px 0; /* Equivalente a margin-top: 10px; margin-bottom: 20px; */
+}
+
+.input[type="checkbox"] + label {
+    color: #666666;
+    font-size: 14px;
+}
+
+.input[type="button"]  {
+    width: 343px;
+    height: 51px;
+    font-size: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #000000;
+    border: 4px solid #45FEFE;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+    font-weight: 600; /* Adiciona semi-bold */
+    margin-bottom: 16px;
+}
+
+.input[type="button"]:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra quando o cursor está sobre o botão */
+}
+
+input[type="button"].submit {
+    background-color: #45FEFE;
+}
+
+input[type="button"].primary {
+    background-color: #FFFFFF;
 }
