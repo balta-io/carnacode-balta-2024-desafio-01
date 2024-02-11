@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    padding: 20px;
+    /* padding: 50px; */
     max-width: 343px; /* Define uma largura máxima para a "caixa" */
     width: 100%; /* Faz com que a "caixa" tenha 100% da largura disponível */
 }
@@ -41,7 +41,6 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-bottom: 24px;
     font-weight: 600; /* Adiciona semi-bold */
 }
 
@@ -51,7 +50,6 @@ body {
     background-color: #F6F6F6;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
-    margin-bottom: 16px;
 }
 
 input::placeholder {
@@ -84,13 +82,11 @@ input::placeholder {
     width: 343px;
     height: 51px;
     font-size: 16px;
-    border-radius: 100px;
     cursor: pointer;
     color: #000000;
     border: 4px solid #45FEFE;
     transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
     font-weight: 600; /* Adiciona semi-bold */
-    margin-bottom: 16px;
 }
 
 .input[type="button"]:hover {
@@ -103,4 +99,68 @@ input[type="button"].submit {
 
 input[type="button"].primary {
     background-color: #FFFFFF;
+}
+
+img.principal-image {
+    width: 95px;
+    height: 95px;
+    border-radius: 30px;
+    border: 4px solid #45FEFE;
+    padding: 7px;
+}
+
+input.input.border-radius {
+    border-radius: 100px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-container {
+    align-items: center;
+}
+
+.item-info {
+    flex-direction: column;
+}
+
+.item-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.item-img {
+    flex-shrink: 0; /* Evita que a imagem encolha */
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px; 
+    background: #F6F6F6; /* Cor de fundo padrão */
+    border: solid #F6F6F6;
+    border-radius: 8px;
+    background-image: url('');
+}
+
+.item-description {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.item-list::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0 20px 0;
+}
+
+.item-time{
+    font-size: 14px;
+    margin-left: auto;
+    color: #BDBDBD;
+}
+
+.time-recent{
+    color: #522020;
 }
