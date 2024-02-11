@@ -107,6 +107,7 @@ img.principal-image {
     border-radius: 30px;
     border: 4px solid #45FEFE;
     padding: 7px;
+    background-color: #FFFFFF;
 }
 
 input.input.border-radius {
