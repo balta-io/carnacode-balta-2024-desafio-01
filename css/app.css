@@ -3,15 +3,21 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.h1{
+    margin-block-start: 0.57em;
+    margin-block-end: 0;
+    text-align: center;
+}
+
 .principalContainer{
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -5%);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
-
+    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -38,11 +44,6 @@ body {
     padding: 7px;
 }
 
-.h1{
-    margin-block-start: 0.57em;
-    margin-block-end: 0;
-}
-
 .btn{
     text-align: center;
     padding: 7px;
@@ -57,4 +58,69 @@ body {
 .btnSecondary{
     border-color: #45FEFE;
     background-color: white;
+}
+
+@media only screen and (min-width: 360px){
+    
+    .principalContainerBigScreen{
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    .h1Small{
+        font-size: 1.85em;
+    }
+    
+    .principalContainerSmallScreen{
+        width: 200px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .h1Small{
+        font-size: 1.65em;
+    }
+
+    .principalContainerSmallScreen{
+        width: 180px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 269px){
+    .h1Small{
+        font-size: 1.45em;
+    }
+    .principalContainerSmallScreen{
+        width: 160px;
+    }
+    
+    .inputSmallScreenContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+        max-width: fit-content;
+    }
+
+    .inputTinyScreen{
+        max-width: 150px;
+        margin-left: 5px;
+    }
 }
