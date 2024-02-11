@@ -1,10 +1,15 @@
+body {
+    background-color: #2E1462;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .principalContainer{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 25px;
 
     display: flex;
@@ -12,7 +17,7 @@
     align-content: center;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: 5px;
+    gap: 9px;
 
     border-radius: 25px;
     background-color: white;
@@ -29,7 +34,8 @@
 .input{
     border-radius: 5px;
     background-color: #f6f6f6;
-    border-width: 0.5px;;
+    border-width: 0.5px;
+    padding: 7px;
 }
 
 .h1{
