@@ -1,12 +1,65 @@
-.flex {
-    display: flex;
+input {
+  background-color: #F6F6F6;
+  border: 1px solid #e8e8e8;
+  padding: 1rem;
+  border-radius: 0.50rem;
 }
 
-.flex-row {
-    flex-direction: row;
+input::placeholder {
+  color: #BDBDBD;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+.btn {
+  padding: 1rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #45FEFE;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #35e0e0;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border: 0.25rem solid #45FEFE;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #f6f6f6;
+  border: 0.25rem solid #35e0e0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-gray {
+  color: #666;
+}
+
+.logo {
+  width: 8rem;
+  border: 0.35rem solid #45FEFE;
+  background: white;
+  padding: 1rem;
+  border-radius: 1.75rem;
+}
+
+.bg-primary {
+  background-color: #2E1462;
 }

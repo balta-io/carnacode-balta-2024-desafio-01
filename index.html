@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/modern-normalize.css" />
+		<link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <title>IMC</title>
-</head>
+  </head>
 
-<body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
-    </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
-</body>
-
+  <body class="bg-primary flex flex-col items-center justify-center min-h-screen">
+		<section class="container">
+			<form class="gap-1 rounded px-5 pt-5 pb-10 flex flex-col items-center justify-center bg-white" method="POST" action="">
+				<div class="-mt-20">
+					<img class="logo" src="assets/icon-no-bg.png" />
+				</div>
+				<div class="flex flex-col gap-1">
+					<h1 class="text-center text-4xl text-black">
+						Faça seu Login
+					</h1>
+	
+					<h2 class="text-center text-xl text-gray">
+						Insira suas informações antes de medir seu IMC
+					</h2>
+				</div>
+				<div class="w-full">
+					<input class="w-full" placeholder="Seu e-mail" type="text" />
+				</div>
+				<div class="w-full flex">
+					<input class="w-full" placeholder="Seu senha" type="text" />
+				</div>
+				<div class="w-full flex">
+					<button type="submit" class="w-full btn btn-primary transition-all duration-500">
+						Fazer Login
+					</button>
+				</div>
+				<div class="w-full flex">
+					<a class="w-full text-center btn btn-secondary transition-all duration-500">
+						Não tenho um acesso
+					</a>
+				</div>
+			</form>
+		</section>
+  </body>
 </html>
