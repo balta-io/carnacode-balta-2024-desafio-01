@@ -42,3 +42,19 @@ body {
     margin-block-start: 0.57em;
     margin-block-end: 0;
 }
+
+.btn{
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.btnPrimary{
+    border-color: #45FEFE;
+    background-color: #45FEFE;
+}
+
+.btnSecondary{
+    border-color: #45FEFE;
+    background-color: white;
+}
