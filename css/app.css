@@ -60,6 +60,60 @@ body {
     background-color: white;
 }
 
+.historyHeader{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.barraPesquisa{
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1em;
+}
+
+.historyDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.historyDivHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historyDivProfileImg{
+    width: 60px;
+    height: 60px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.historyDivHeaderTextDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.historyDivTimer{
+    color: #522020;
+    font-size: 12px;
+    text-align: center;
+}
+
+.historyInfoText{
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.dateColor{
+    color: #BDBDBD;
+}
+
 @media only screen and (min-width: 360px){
     
     .principalContainerBigScreen{
@@ -98,6 +152,21 @@ body {
         flex-wrap: nowrap;
         align-items: center;
         gap: 5px;
+    }
+
+    .historySmallScreenFontSite{
+        font-size: x-small;
+    }
+
+    .barraPesquisaSmall{
+        max-width: 175px;
+    }
+
+    .historyDivProfileImg{
+        width: 40px;
+        height: 40px;
+        background-color: #F6F6F6;
+        border-radius: 5px;
     }
 }
 
