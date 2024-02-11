@@ -6,7 +6,80 @@
     flex-direction: row;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .input-text {
+    width: 80%;
+    height: 50px;
     background-color: #F6F6F6;
     border: 2px solid #BDBDBD;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.checkbox {
+    background-color: #000000;
+    border: 10px solid #BDBDBD;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.checkbox-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button-primary {
+    width: 80%;
+    background-color: #45FEFE;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #45FEFE;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.app-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Seus estilos para telas pequenas aqui */
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Seus estilos para telas médias aqui */
+}
+
+@media screen and (min-width: 901px) {
+    /* Seus estilos para telas grandes aqui */
 }
