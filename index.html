@@ -9,18 +9,34 @@
 </head>
 
 <body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
-    </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
+    <div class="container">
+        <h2 class="container-h2">Cálculo de IMC</h2>
+        <form id="bmiForm">
+          <div class="form-group">
+            <label for="altura">Altura (m):</label>
+            <input type="number" step="0.01" id="altura" name="altura" required placeholder="Altura" class="form-group-input-login">
+          </div>
+          <div class="form-group">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" step="0.1" id="peso" name="peso" placeholder="Peso" required>
+          </div>
+          <div class="form-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="mais65" name="mais65"> Eu tenho 65 anos ou mais
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Calcular">
+          </div>
+        </form>
+      </div>
 </body>
 
 </html>
