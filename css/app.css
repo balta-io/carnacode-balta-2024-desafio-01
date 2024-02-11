@@ -96,3 +96,56 @@ input[type="checkbox"]:checked:before {
 .bg-primary {
   background-color: #2E1462;
 }
+
+.splash-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  animation: fade-out 3s;
+}
+
+.splash-animation .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  fill: white;
+
+  animation: zoom-in 1.5s;
+  animation-delay: 1.5s;
+}
+
+@keyframes zoom-in {
+  50% {
+    width: 10rem;
+  }
+
+  60% {
+    width: calc(10rem * 0.8);
+  }
+
+  100% {
+    width: 250%;
+  }
+}
+
+@keyframes fade-out {
+  0%, 75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.logo-splash {
+  width: 8rem;
+}
+
+.content {
+  width: 100%;
+}
