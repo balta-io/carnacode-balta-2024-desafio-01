@@ -4,6 +4,6 @@ Você também pode participar se inscrevendo neste link:
 👉 https://go.balta.io/carnacode-2024
 
 Este é o resultado do primeiro desafio, onde pude desenvolver minhas habilidades com HTML e CSS, criando o protótipo do App que estamos desenvolvendo.
-👉 LINK PARA SEU PROJETO NO GITHUB
+👉 https://github.com/kmitsuishi-08/carnacode-balta-2024-desafio-01
 
 #dev #developer #desenvolvedor #programming #programação #programador #web #webcomponents #webdev #frontend #html #css #microsoft #csharp #dotnet #aspnet #razor #razorpages #blazor #blazorwasm #wasm #webassembly #pwa

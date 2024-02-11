@@ -6,7 +6,32 @@
     flex-direction: row;
 }
 
-.input-text {
+div {
+    margin-bottom: 15px;
+}
+
+.input[type="text"]  {
+    width: 343px;
+    height: 50px;
     background-color: #F6F6F6;
     border: 2px solid #BDBDBD;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que a altura seja pelo menos 100% da viewport */
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; /* Define uma largura máxima para a "caixa" */
+    width: 100%; /* Faz com que a "caixa" tenha 100% da largura disponível */
 }
