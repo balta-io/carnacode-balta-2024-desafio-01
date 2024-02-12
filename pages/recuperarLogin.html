@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" type="image/png" href="/assets/icon.png">
+    <title>Recuperar Conta</title>
+</head>
+<body>
+    <section class="principalContainer principalContainerBigScreen principalContainerSmallScreen" >
+        <h1 class="h1 h1Small">Relembre seu Login</h1>
+        <span class="descricaoTela">
+            Recupere seu acesso antes de fazer o cálculo IMC
+        </span>
+        <br>
+        <div class="inputSmallScreenContainer">
+            <input id="email" class="input inputLogin inputTinyScreen" type="email" placeholder="E-mail" />
+        </div>
+        <div>
+            <input id="notRobot" type="checkbox"/>
+            <span>Não sou um robô.</span>
+        </div>
+        <div class="horizontalDivisor"></div>
+        <button class="btn btnPrimary" onclick="checking()">Recuperar Login</button>
+        <button class="btn btnSecondary" onclick="window.location.href='/pages/cadastro.html'">Não tenho um acesso</button>
+    
+</body>
+</html>
+
+<script>
+    function checking() {
+    var email = document.getElementById("email").value;
+    var notRobot = document.getElementById("notRobot").checked;
+
+    if (email.trim() === "" || !notRobot) {
+        alert("Por favor, preencha todos os campos.");
+    }
+    else{
+      window.location.href='/pages/login.html'
+    }
+  }
+</script>

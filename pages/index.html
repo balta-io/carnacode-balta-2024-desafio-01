@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <img id="centralizarSplash" width="250" height="250" src="/assets/icon-no-bg.png" />
-    <section id="conteudoPrincipal" class="principalContainer principalContainerBigScreen principalContainerSmallScreen">
+    <section class="principalContainer principalContainerBigScreen principalContainerSmallScreen">
         <h1 class="h1 h1Small">Cálculo de IMC</h1>
         <br>
         <div class="inputSmallScreenContainer">
@@ -37,25 +36,3 @@
     </section>
 </body>
 </html>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var elemento = document.getElementById('centralizarSplash');
-    
-    var tempoFadeOut = 2000;
-    
-    setTimeout(function() {
-        elemento.style.opacity = '0';
-    
-    setTimeout(function() {
-      var conteudoPrincipal = document.getElementById('conteudoPrincipal');
-      conteudoPrincipal.style.display = 'flex';
-      
-      // Inicia o fade in do conteúdo principal
-      setTimeout(function() {
-        conteudoPrincipal.style.opacity = '1';
-      }, 100);
-    }, tempoFadeOut);
-  });
-});
-</script>

@@ -3,6 +3,14 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.inputLogin{
+    width: 95%;
+}
+
+.descricaoTela{
+    text-align: center;
+}
+
 .h1{
     margin-block-start: 0.57em;
     margin-block-end: 0;
