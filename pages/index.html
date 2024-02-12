@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <section class="principalContainer principalContainerBigScreen principalContainerSmallScreen">
+    <section id="calculadora" class="principalContainer principalContainerBigScreen principalContainerSmallScreen">
         <h1 class="h1 h1Small">Cálculo de IMC</h1>
         <br>
         <div class="inputSmallScreenContainer">
-            <input required class="input inputTinyScreen" type="number" placeholder="Altura" />
+            <input required id="altura" class="input inputTinyScreen" type="number" placeholder="Altura" />
             <span>m</span>
         </div>
         <div class="inputSmallScreenContainer">
-            <input required class="input inputTinyScreen" type="number" placeholder="Peso" />
+            <input required id="peso" class="input inputTinyScreen" type="number" placeholder="Peso" />
             <span>Kg</span>
         </div>
         <select required class="input">
@@ -31,8 +31,8 @@
             <span>Eu tenho 65 anos ou mais</span>
         </div>
         <div class="horizontalDivisor"></div>
-        <button class="btn btnPrimary">Calcular meu IMC</button>
-        <button class="btn btnSecondary">Entenda o cálculo</button>
+        <button class="btn btnPrimary" onclick="window.location.href='/pages/history.html'">Calcular meu IMC</button>
+        <button class="btn btnSecondary" onclick="window.location.href='/pages/significado.html'">Entenda o cálculo</button>
     </section>
 </body>
 </html>
