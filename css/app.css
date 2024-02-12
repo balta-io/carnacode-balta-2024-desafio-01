@@ -87,7 +87,7 @@ body {
     margin-bottom: 16px;
 }
 
-.white-form .input[type="text"], .white-form .input[type="password"]{
+.white-form .input[type="text"], .white-form .input[type="password"], .white-form .input[type="email"]{
     width: 313px; 
     height: 50px;
     background-color: #F6F6F6;
@@ -137,6 +137,19 @@ input::placeholder {
 
 .white-form .input[type="button"]{
     margin-bottom: 16px;
+    width: 311px;
+    height: 51px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
+    border: 4px solid #45FEFE;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+    font-weight: 600; /* Adiciona semi-bold */
+}
+
+.white-container {
+    position: relative;
+    z-index: 1; /* Certifica-se de que os inputs estão acima da imagem */
 }
 
 .input[type="button"]:hover {
