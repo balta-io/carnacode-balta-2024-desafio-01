@@ -9,6 +9,21 @@ body {
     text-align: center;
 }
 
+#centralizarSplash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#conteudoPrincipal{
+  display: none;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
 .principalContainer{
     position: absolute;
     top: 5%;
@@ -17,7 +32,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
-    
+
     display: flex;
     flex-direction: column;
     align-content: center;
