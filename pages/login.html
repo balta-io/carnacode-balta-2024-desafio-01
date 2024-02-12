@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" type="image/png" href="/assets/icon.png">
+    <title>Login</title>
+</head>
+<body>
+    <img id="centralizarSplash" width="250" height="250" src="/assets/icon-no-bg.png" />
+    <section id="conteudoPrincipal" class="principalContainer principalContainerBigScreen principalContainerSmallScreen" >
+        <h1 class="h1 h1Small">Faça seu Login</h1>
+        <span class="descricaoTela">
+            Insira suas informações antes de medir seu IMC
+        </span>
+        <br>
+        <div class="inputSmallScreenContainer">
+            <input id="email" class="input inputLogin inputTinyScreen" type="email" placeholder="E-mail" />
+        </div>
+        <div class="inputSmallScreenContainer">
+            <input id="senha" class="input inputLogin inputTinyScreen" type="password" placeholder="Senha" />
+        </div>
+        <div>
+            <input id="notRobot" type="checkbox"/>
+            <span>Não sou um robô.</span>
+        </div>
+        <div class="horizontalDivisor"></div>
+        <button class="btn btnPrimary" onclick="checking()">Fazer Login</button>
+        <button class="btn btnSecondary" onclick="window.location.href='/pages/cadastro.html'">Não tenho um acesso</button>
+        <button class="btn btnSecondary" onclick="window.location.href='/pages/recuperarLogin.html'">Recuperar login</button>
+    </section>
+</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elemento = document.getElementById('centralizarSplash');
+    
+    var tempoFadeOut = 2000;
+    
+    setTimeout(function() {
+        elemento.style.opacity = '0';
+    
+    setTimeout(function() {
+      var conteudoPrincipal = document.getElementById('conteudoPrincipal');
+      conteudoPrincipal.style.display = 'flex';
+      
+      // Inicia o fade in do conteúdo principal
+      setTimeout(function() {
+        conteudoPrincipal.style.opacity = '1';
+      }, 100);
+    }, tempoFadeOut);
+    });
+  });
+
+  function checking() {
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+    var notRobot = document.getElementById("notRobot").checked;
+
+    if (email.trim() === "" || senha.trim() === "" || !notRobot) {
+        alert("Por favor, preencha todos os campos.");
+    }
+    else{
+      window.location.href='/pages/index.html'
+    }
+  }
+
+</script>
