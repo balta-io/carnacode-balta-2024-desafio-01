@@ -70,6 +70,10 @@ main.content {
     opacity: 1;
 }
 
+.form-control.rounded {
+    border-radius: 100px;
+}
+
 .form-checkbox {
     display: block;
     position: relative;
