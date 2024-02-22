@@ -1,184 +1,184 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 14px;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
-        "Liberation Sans", sans-serif;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+    "Liberation Sans", sans-serif;
 }
 
 .page-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .page-header .logo {
-    padding: 0.5rem;
-    border: 2px solid #45fefe;
-    border-radius: 20px;
-    margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #45fefe;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 main.content {
-    display: flex;
-    padding-right: 1.1rem;
-    padding-left: 1.1rem;
-    margin-top: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    flex-direction: column;
+  display: flex;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
 }
 
 .content * {
-    flex: 1 0 0%;
-    width: 100%;
+  flex: 1 0 0%;
+  width: 100%;
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    background-color: #f6f6f6;
-    border: 2px solid #e8e8e8;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    color: #bdbdbd;
-    font-size: 1.1rem;
+  display: block;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: 2px solid #e8e8e8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #bdbdbd;
+  font-size: 1.1rem;
 }
 
 .form-control::placeholder {
-    color: #bdbdbd;
-    opacity: 1;
+  color: #bdbdbd;
+  opacity: 1;
 }
 
 .form-control.rounded {
-    border-radius: 100px;
+  border-radius: 100px;
 }
 
 .form-checkbox {
-    display: block;
-    position: relative;
-    padding: 1rem 1rem 1rem 1.2rem;
-    margin-bottom: 1rem;
-    color: #bdbdbd;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 1rem 1rem 1rem 1.2rem;
+  margin-bottom: 1rem;
+  color: #bdbdbd;
+  cursor: pointer;
 }
 
 .form-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
 }
 
 .form-checkbox .checkmark {
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    width: 1rem;
-    height: 1rem;
-    background-color: #bdbdbd;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #bdbdbd;
 }
 
 .form-checkbox .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 .form-checkbox input:checked ~ .checkmark:after {
-    display: block;
+  display: block;
 }
 
 .form-checkbox .checkmark:after {
-    top: 0.2rem;
-    left: 0.4rem;
-    width: 0.3rem;
-    height: 0.6rem;
-    border: solid #000;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  top: 0.2rem;
+  left: 0.4rem;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .button {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    border-radius: 100px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-radius: 100px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
 }
 
 .button.fill {
-    border: none;
-    background-color: #45fefe;
+  border: none;
+  background-color: #45fefe;
 }
 
 .button.outline {
-    border: 2px solid #45fefe;
+  border: 2px solid #45fefe;
 }
 
 .content-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .group-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .group-item .cover {
-    background-color: #f6f6f6;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-    flex: unset;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  flex: unset;
 }
 
 .group-item .cover ~ .group-item-content {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .group-item header {
-    display: flex;
-    align-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .group-item:first-child header small {
-    color: #522020;
+  color: #522020;
 }
 
 .group-item p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .group-item hr {
-    margin-bottom: 1rem;
-    color: inherit;
-    border-top: 1px solid #e8e8e8;
-    opacity: 0.25;
+  margin-bottom: 1rem;
+  color: inherit;
+  border-top: 1px solid #e8e8e8;
+  opacity: 0.25;
 }
