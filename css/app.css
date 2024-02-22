@@ -20,6 +20,13 @@ body {
     margin-top: 2rem;
 }
 
+.page-header .logo {
+    padding: 0.5rem;
+    border: 2px solid #45fefe;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
 .flex {
     display: flex;
 }
