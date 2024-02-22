@@ -42,6 +42,7 @@ main.content {
     margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
+    flex-direction: column;
 }
 
 .content * {
