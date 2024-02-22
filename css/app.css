@@ -64,6 +64,11 @@ main.content {
     font-size: 1.1rem;
 }
 
+.form-control::placeholder {
+    color: #bdbdbd;
+    opacity: 1;
+}
+
 .form-checkbox {
     display: block;
     position: relative;
