@@ -50,10 +50,6 @@ main.content {
     width: 100%;
 }
 
-.content section {
-    display: flex;
-}
-
 .form-control {
     display: block;
     width: 100%;
