@@ -10,6 +10,8 @@ O CarnaCode é um evento online e gratuito que acontece nos dias 10, 11, 12 e 13
 
 Neste primeiro desafio, desenvolvemos todo a parte de HTML e CSS da aplicação que vamos criar. Aprendemos conceitos como organização, layouts e semântica do HTML, bem como estilos e responsividade no CSS.
 
+[Acesse o código](../../tree/desafio-1)
+
 ### Tecnologias Utilizadas
 
 - HTML
