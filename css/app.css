@@ -28,7 +28,31 @@ body {
     flex-direction: row;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+main.content {
+    display: flex;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content * {
+    flex: 1;
+    width: 100%;
+}
+
+.content section {
+    display: flex;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    background-color: #f6f6f6;
+    border: 2px solid #e8e8e8;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #bdbdbd;
+    font-size: 1.1rem;
 }
