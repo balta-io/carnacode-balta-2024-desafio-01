@@ -56,3 +56,51 @@ main.content {
     color: #bdbdbd;
     font-size: 1.1rem;
 }
+
+.form-checkbox {
+    display: block;
+    position: relative;
+    padding: 1rem 1rem 1rem 1.2rem;
+    margin-bottom: 1rem;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+.form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.form-checkbox .checkmark {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #bdbdbd;
+}
+
+.form-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.form-checkbox .checkmark:after {
+    top: 0.2rem;
+    left: 0.4rem;
+    width: 0.3rem;
+    height: 0.6rem;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
