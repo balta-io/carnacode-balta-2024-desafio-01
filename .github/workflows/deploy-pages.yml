@@ -3,6 +3,10 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
+    paths:
+      - "**.html"
+      - "**.css"
+
   workflow_dispatch:
 
 permissions:
