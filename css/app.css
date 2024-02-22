@@ -106,6 +106,7 @@ main.content {
 }
 
 .button {
+    text-decoration: none;
     display: block;
     width: 100%;
     border-radius: 100px;
@@ -115,6 +116,7 @@ main.content {
     font-weight: 600;
     color: #000;
     text-align: center;
+    cursor: pointer;
 }
 
 .button.fill {
