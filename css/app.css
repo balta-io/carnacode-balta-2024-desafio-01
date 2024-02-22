@@ -139,3 +139,46 @@ main.content {
 .button.outline {
     border: 2px solid #45fefe;
 }
+
+.content-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.group-item .cover {
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    flex: unset;
+}
+
+.group-item .cover ~ .group-item-content {
+    margin-left: 1rem;
+}
+
+.group-item header {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.group-item:first-child header small {
+    color: #522020;
+}
+
+.group-item p {
+    margin-bottom: 1rem;
+}
+.group-item hr {
+    margin-bottom: 1rem;
+    color: inherit;
+    border-top: 1px solid #e8e8e8;
+    opacity: 0.25;
+}
